@@ -38,7 +38,7 @@
    ```
    Comando CURL para respostas em Json
    ```
-   curl -X POST -H "Content-Type: application/json" -d '{"valor": 2077 }' http://localhost:3000/saque
+   curl -X POST -H "Content-Type: application/json" -d '{"valor": 2077 }' http://localhost:5000/api/saque
    ```
 
    
