@@ -2,17 +2,21 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class SaqueService {
+  //definição de valores de notas
   private readonly notas: number[] = [100, 50, 20, 10, 5, 2];
 
-  calculateWithdraw(amount: number): { [key: number]: number } {
-    const result: { [key: number]: number } = {};
+  //calculo do saque utilizando numero como key
+  calculaSaque(amount: number): { [key: number]: number } {
+    const resultado: { [key: number]: number } = {};
 
+    //enquanto o array de notas for percorrido, 
+    //calcula se a quantidade atual "cabe" no valor restante.
     for (const note of this.notas) {
-      const quantity = Math.floor(amount / note);
-      result[note] = quantity;
-      amount -= quantity * note;
+      const quantidade = Math.floor(amount / note);
+      resultado[note] = quantidade;
+      amount -= quantidade * note;
     }
 
-    return result;
+    return resultado;
   }
 }
