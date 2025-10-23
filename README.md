@@ -40,6 +40,26 @@
 
 
    # Testes
+   
+  Testes Jest
+  ![Testes](Imagens/testes.png)
+  
+  Teste com um valor inteiro positivo
+  ![Testes](Imagens/170.png)
+  
+  Teste com String
+  ![String](Imagens/jota.png)
+
+  Teste com valor não inteiro
+  ![Testes](Imagens/1,2.png)
+  
+  Teste com valor inteiro negativo
+  ![Testes](-12/170.png)
+
+  
+  
+
+
 
    
  
