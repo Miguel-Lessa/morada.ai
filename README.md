@@ -54,7 +54,7 @@
   ![Testes](Imagens/1,2.png)
   
   Teste com valor inteiro negativo
-  ![Testes](-12/170.png)
+  ![Testes](12.png)
 
   
   
