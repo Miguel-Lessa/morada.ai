@@ -3,7 +3,7 @@ import { SaqueService } from './saque.service';
 import { error } from 'console';
 
 
-@Controller('saque')
+@Controller('/saque')
 export class SaqueController {
     constructor (private readonly saqueService: SaqueService) {}
 
@@ -27,8 +27,6 @@ export class SaqueController {
                 break;
         }
 
-        
-
 
         //chamada do método responsável por calcular o valor do saque
         const result = this.saqueService.calculaSaque(valor);
@@ -37,7 +35,6 @@ export class SaqueController {
           .map(Number)
           .sort((a, b) => b - a);
 
-        //quebra de linha
         const outputOrdenado: Record<string, number> = {};
         for (const key of notasOrdenadas) {
           outputOrdenado[String(key)] = result[String(key)];
