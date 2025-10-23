@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { SaqueService } from './saque/saque.service';
-import { SaqueController } from './saque/saque.controller';
-import { SaqueModule } from './saque/saque.module';
+import { SaqueService } from './api/saque/saque.service';
+import { SaqueController } from './api/saque/saque.controller';
+import { SaqueModule } from './api/saque/saque.module';
 
 @Module({
   imports: [SaqueModule],
