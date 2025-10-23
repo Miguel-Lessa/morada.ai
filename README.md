@@ -37,6 +37,12 @@
    ```
    npx jest --runInBand
    ```
+   Comando CURL para respostas do Json
+   ```
+   curl -X POST -H "Content-Type: application/json" -d '{"valor": 2077 }' http://localhost:3000/saque
+   ```
+
+   
 
 
    # Testes
@@ -54,7 +60,7 @@
   ![Testes](Imagens/1,2.png)
   
   Teste com valor inteiro negativo
-  ![Testes](12.png)
+    ![Testes](Imagens/12.png)
 
   
   
